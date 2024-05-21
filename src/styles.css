@@ -13,6 +13,7 @@ html {
 
 /* Header Styles */
 header {
+  width: 100vw;
   background-color: rgba(16, 16, 16, 0.7);
   padding: 20px 0;
   color: white;
@@ -23,6 +24,7 @@ header {
 
 .header-content {
   width: 100vw;
+  max-width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -73,6 +75,12 @@ nav a {
 }
 
 @media screen and (max-width: 1100px) {
+  nav a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
   nav ul {
     margin: 2rem 0 1rem 0;
   }
@@ -83,10 +91,24 @@ nav a:hover {
 }
 
 /* Background Styles */
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.components-container {
+  z-index: 9999;
+}
+
 .background {
-  background: url("./header-bg.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
-  background-position: center;
+  position: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 9900;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 480px) {
@@ -216,6 +238,7 @@ nav a:hover {
 
 /* Footer Styles */
 footer {
+  width: 100vw;
   background-color: rgba(16, 16, 16, 0.7);
   padding: 20px;
   text-align: center;

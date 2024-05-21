@@ -9,14 +9,17 @@ import ScrollToTop from "./components/ScrollToTop"; // Import the ScrollToTop co
 
 const App: React.FC = () => {
   return (
-    <div className="background">
-      <Header id="header" />
-      <Menu />
-      <About />
-      <Map />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
+    <div className="page">
+      <img src="bg.jpg" className="background" />
+      <div className="components-container">
+        <Header id="header" />
+        <Menu />
+        <About />
+        <Map />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </div>
     </div>
   );
 };
