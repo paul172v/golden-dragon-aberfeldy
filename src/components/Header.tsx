@@ -1,12 +1,8 @@
 import React from "react";
 
-interface T {
-  id: string;
-}
-
-const Header: React.FC<T> = (props) => {
+const Header: React.FC = () => {
   return (
-    <header className="header" id={props.id}>
+    <header className="header" id="header">
       <div className="header-content">
         <div className="header--row-one">
           <h1>Golden Wok - Chinese Takeaway</h1>

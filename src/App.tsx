@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <div className="page">
       <img src="bg.jpg" className="background" />
       <div className="components-container">
-        <Header id="header" />
+        <Header />
         <Menu />
         <About />
         <Map />
