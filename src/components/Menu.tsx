@@ -15,7 +15,7 @@ interface ICardProps {
   wide?: boolean;
 }
 
-const MenuCard: React.FC<ICardProps> = (props: ICardProps) => {
+const MenuCategory: React.FC<ICardProps> = (props: ICardProps) => {
   return (
     <div id={props.id} className="menu-category">
       <h3>{props.heading}</h3>
@@ -108,93 +108,97 @@ const Menu: React.FC = () => {
         </ul>
       </nav>
 
-      <MenuCard
+      <MenuCategory
         id="munchieBox"
         heading="Munchie Box"
         array={menuData.munchieBox}
         wide={true}
       />
-      <MenuCard
+      <MenuCategory
         id="chefsCombo"
         heading="Chef's Combo"
         array={menuData.chefsCombo}
         wide={true}
       />
-      <MenuCard
+      <MenuCategory
         id="crispyAromaticDuck"
         heading="Crispy Aromatic Duck"
         array={menuData.crispyAromaticDuck}
       />
-      <MenuCard id="dimSum" heading="Dim Sum" array={menuData.dimSum} />
-      <MenuCard
+      <MenuCategory id="dimSum" heading="Dim Sum" array={menuData.dimSum} />
+      <MenuCategory
         id="saltAndPepperDishes"
         heading="Salt & Pepper Dishes"
         array={menuData.saltAndPepperDishes}
       />
-      <MenuCard id="soups" heading="Soups" array={menuData.soups} />
-      <MenuCard
+      <MenuCategory id="soups" heading="Soups" array={menuData.soups} />
+      <MenuCategory
         id="sweetAndSourDishes"
         heading="Sweet & Sour Dishes"
         array={menuData.sweetAndSourDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="curryDishes"
         heading="Curry Dishes"
         array={menuData.curryDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="thaiCurryDishes"
         heading="Thai Curry Dishes"
         array={menuData.thaiCurryDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="chickenDishes"
         heading="Chicken Dishes"
         array={menuData.chickenDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="beefDishes"
         heading="Beef Dishes"
         array={menuData.beefDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="duckDishes"
         heading="Duck Dishes"
         array={menuData.duckDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="kingPrawnDishes"
         heading="King Prawn Dishes"
         array={menuData.kingPrawnDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="eggFooYungDishes"
         heading="Egg Foo Yung Dishes"
         array={menuData.eggFooYungDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="riceDishes"
         heading="Rice Dishes"
         array={menuData.riceDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="chowMeinNoodlesDishes"
         heading="Chow Mein Noodles Dishes"
         array={menuData.chowMeinNoodlesDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="vegetableDishes"
         heading="Vegetable Dishes"
         array={menuData.vegetableDishes}
       />
-      <MenuCard
+      <MenuCategory
         id="sideDishes"
         heading="Side Dishes"
         array={menuData.sideDishes}
       />
-      <MenuCard id="desserts" heading="Desserts" array={menuData.desserts} />
-      <MenuCard id="sauces" heading="Sauces" array={menuData.sauces} />
-      <MenuCard
+      <MenuCategory
+        id="desserts"
+        heading="Desserts"
+        array={menuData.desserts}
+      />
+      <MenuCategory id="sauces" heading="Sauces" array={menuData.sauces} />
+      <MenuCategory
         id="mealDeals"
         heading="Meal Deals"
         array={menuData.mealDeals}
