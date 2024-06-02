@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header className="header" id="header">
       <div className="header-content">
         <div className="header--row-one">
-          <h1>Golden Wok - Chinese Takeaway</h1>
+          <h1>Golden Dragon - Chinese Takeaway</h1>
           <nav>
             <ul>
               <li>
