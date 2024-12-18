@@ -21,8 +21,8 @@ class LatLng {
   }
 }
 
-const positionStart = new LatLng(56.621802, -3.865618);
-const positionGoldenWok = new LatLng(56.621802, -3.865618);
+const positionStart = new LatLng(55.953251, -3.188267);
+const positionGoldenWok = new LatLng(55.953251, -3.188267);
 
 const goldenWokIcon = new L.Icon({
   iconUrl: "icons/marker-icon.png",

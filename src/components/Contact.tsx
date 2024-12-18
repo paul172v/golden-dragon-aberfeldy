@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
       <h2>Contact</h2>
       <p>Phone: +44 7700 900000</p>
       <p>Customer Service Line: +44 7700 900000</p>
-      <p>Address: 31 Example Street, Aberfeldy, Scotland, PH15 2AF</p>
+      <p>Address: 31 Example Street, Edinburgh, Scotland, ED15 8AY</p>
       <p>Email: contact@example.co.uk</p>
     </section>
   );
